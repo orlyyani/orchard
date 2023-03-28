@@ -36,7 +36,7 @@ import { latestCards } from "../composables/latest";
 
 const cards = latestCards();
 
-const getImageUrl = (path: any) => {
+const getImageUrl = (path: string) => {
   const assets = import.meta.glob("~/assets/**/*", {
     eager: true,
     import: "default",

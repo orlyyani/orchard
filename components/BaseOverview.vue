@@ -8,22 +8,25 @@
         >
           <div class="sm:col-span-2 md:row-span-4">
             <img
+              @click="toggleModal(true, 'Image-01.jpg')"
               src="~/assets/component-01/Image-01.jpg"
-              class="object-cover w-full h-full"
+              class="object-cover w-full h-full cursor-pointer"
               alt="overview-image"
             />
           </div>
           <div class="sm:col-span-1 md:row-span-2">
             <img
+              @click="toggleModal(true, 'Image-02.jpg')"
               src="~/assets/component-01/Image-02.jpg"
-              class="object-cover w-full h-full"
+              class="object-cover w-full h-full cursor-pointer"
               alt="overview-image"
             />
           </div>
           <div class="sm:col-span-1 md:row-span-2">
             <img
+              @click="toggleModal(true, 'Image-03.jpg')"
               src="~/assets/component-01/Image-03.jpg"
-              class="object-cover w-full h-full"
+              class="object-cover w-full h-full cursor-pointer"
               alt="overview-image"
             />
           </div>
@@ -55,7 +58,21 @@
       </div>
     </div>
   </div>
+
+  <ImageModal v-show="showModal" :image="activeImage" @close="toggleModal(false, '')" />
 </template>
+
+<script setup lang="ts">
+  import { ref } from 'vue'
+
+  const showModal = ref(false)
+  const activeImage = ref('')
+
+  const toggleModal = (value: boolean, image: string | '') => {
+    showModal.value = value
+    activeImage.value = image
+  }
+</script>
 
 <style scoped lang="scss">
 .information {
