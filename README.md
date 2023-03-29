@@ -29,6 +29,10 @@ Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introdu
 - tailwindcss
 - sass
 
+**Animation**
+
+- aos
+
 **Others**
 
 - typescript

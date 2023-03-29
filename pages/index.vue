@@ -4,7 +4,9 @@
       <BaseOverview />
     </div>
     <div class="container py-48">
-      <BaseLatest />
+      <div data-aos="fade-up" data-aos-delay="300">
+        <BaseLatest />
+      </div>
     </div>
   </div>
 </template>

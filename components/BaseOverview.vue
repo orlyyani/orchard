@@ -2,7 +2,7 @@
   <div class="overview">
     <div class="grid grid-cols-1 gap-3 md:grid-cols-3 gap-6">
       <!-- overview images -->
-      <div class="col-span-2">
+      <div class="col-span-2" data-aos="fade-up" data-aos-delay="300">
         <div
           class="grid grid-rows-3 sm:grid-rows-2 md:grid-rows-4 md:grid-flow-col gap-6 max-h-600"
         >
@@ -33,7 +33,7 @@
         </div>
       </div>
       <!-- overview information -->
-      <div class="information">
+      <div class="information" data-aos="fade-up" data-aos-delay="400">
         <h1 class="title uppercase pb-3 text-slate-300">
           Answer Your Body's Needs
         </h1>
